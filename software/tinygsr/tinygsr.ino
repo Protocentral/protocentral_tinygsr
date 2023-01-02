@@ -27,6 +27,8 @@
 #include <Arduino.h>
 #include <Wire.h>
 
+#include <FIR.h>
+
 #include <protocentral_TLA20xx.h>
 
 #define TLA20XX_I2C_ADDR 0x49
@@ -46,11 +48,18 @@ const char DataPacketHeader[5] = {CES_CMDIF_PKT_START_1, CES_CMDIF_PKT_START_2, 
 
 TLA20XX tla2022(TLA20XX_I2C_ADDR);
 
+FIR<float, 8> fir;
+
 void setup() 
 {
     delay(3000);
     Serial.begin(57600);
     Serial.println("Starting ADC...");
+
+    
+    float coef[8] = { 1., 1., 1., 1., 1., 1., 1., 1.};
+     // Set the coefficients
+    fir.setFilterCoeffs(coef);
 
     //Wire.setSDA(4);
     //Wire.setSCL(5);
@@ -61,13 +70,15 @@ void setup()
     
     tla2022.setMode(TLA20XX::OP_CONTINUOUS);
     tla2022.setDR(TLA20XX::DR_128SPS);
-    tla2022.setFSR(TLA20XX::FSR_2_048V);
+    tla2022.setFSR(TLA20XX::FSR_0_512V);
 }
 
 void loop() 
 {
-    val = tla2022.read_adc(); // +/- 2.048 V FSR, 1 LSB = 1 mV
+    val = fir.processReading(tla2022.read_adc()); // +/- 2.048 V FSR, 1 LSB = 1 mV
     data = (int16_t)val;
+
+    //Serial.println(data);
     
     DataPacket[0] = (uint8_t)data;
     DataPacket[1] = (uint8_t)(data >> 8);
@@ -89,8 +100,9 @@ void loop()
   //send packet footer
   for(int i=0; i<2; i++){
 
-    Serial.write(DataPacketFooter[i]);
+   Serial.write(DataPacketFooter[i]);
   }
+
     
-    delay(10);
+    delay(8);
 }
