@@ -51,10 +51,6 @@ Important Warning: When connecting the electrodes to the body, it is safer to di
 
 The GUI for visualizing the skin response is written in Processing, based on Java and is cross-compliable across platforms.
 
-![ProtoCentral Openview]()
-
-Java 8 is required on all platforms for running the processing-based GUI application. You can download Java for your platform from the Official Java website.
-
 You can download and install ProtoCentral OpenView from [this GitHub Repo](https://github.com/Protocentral/protocentral_openview). You can also program your Arduino with the example sketch specific to OpenView.
 
 Once you have opened the OpenView GUI, make sure to select “tinyGSR” under the “Board” dropdown. If everything goes well, you will be able to see the output.
