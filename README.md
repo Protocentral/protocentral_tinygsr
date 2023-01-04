@@ -1,6 +1,8 @@
 # ProtoCentral tinyGSR 
 
-Buy one ![ProtoCentral tinyGSR breakout board - Qwiic / STEMMA QT](https://protocentral.com/product/protocentral-tinygsr-breakout-board-qwiic-stemma-qt/)
+Buy one [ProtoCentral tinyGSR breakout board - Qwiic / STEMMA QT](https://protocentral.com/product/protocentral-tinygsr-breakout-board-qwiic-stemma-qt/)
+
+![ProtoCentral tinyGSR breakout board - Qwiic / STEMMA QT](assets/tinygsr.JPG)
 
 ProtoCentral tinyGSR breakout board can be used to measure the electrical conductivity of the skin. GSR is a galvanic skin response (GSR) that assesses a person’s emotional state or arousal level by monitoring variations in sweat gland activity. When a person is emotionally aroused or stressed, their sweat gland activity increases, which can be measured as changes in the electrical conductivity of the skin. With onboard LM324P Operational Amplifiers & TLA2022 has 12-bit resolution ADC and can operate at a sample rate of 3.3 kSPS (thousands of samples per second) through an I2C interface.
 
@@ -17,6 +19,8 @@ If you have bought the breakout the connection with the Arduino board is as foll
 
 ### Interfacing with Qwiic
 The tinyGSR has an On-board Qwiic compatible connectors to bring flexibility in interfacing. It makes prototyping easy, less complex and interfacing with I2C has been put up simple. The board has built-in support for popular qwiic sensors. This would make it more suitable to plug in, detect the sensor, upload the code and read data.
+
+![Qwiic Interface](assets/qwiic.JPG)
 
 ## Programming
 * [Download and Install the IDE](https://www.arduino.cc/en/software)
@@ -37,6 +41,8 @@ ProtoCentral tinyGSR can be used to detect skin conductance response (SCR), also
 
 ### Connecting the Electrodes
 A 2-electrode cable along with a standard stereo jack is provided along with the kit to connect the electrodes to the board. The other side of the electrode connector would connect to Snap-on electrodes attached to the palm.
+
+![Electrodes Connection](assets/electrodes.jpg)
 
 Important Warning: When connecting the electrodes to the body, it is safer to disconnect the mains power source to the Arduino. For example, if you are using the Arduino along with a laptop, disconnecting the battery charger from the laptop would be a safe option.
 
