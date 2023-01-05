@@ -1,59 +1,23 @@
 # ProtoCentral tinyGSR 
 
-Buy one [ProtoCentral tinyGSR breakout board - Qwiic / STEMMA QT](https://protocentral.com/product/protocentral-tinygsr-breakout-board-qwiic-stemma-qt/)
+ProtoCentral tinyGSR is a [Galvanic Skin Response (GSR) / Electrodermal Activity (EDA)](https://en.wikipedia.org/wiki/Electrodermal_activity) measurement breakout board that allows you to measure and track your physiological responses in real time. GSR measures the changes in electrical conductivity / Electrodermal acivity of the skin, providing valuable insights into a person's emotional state and stress levels. When a person is emotionally aroused or stressed, their sweat gland activity increases, which can be measured as changes in the electrical conductivity of the skin. 
 
-![ProtoCentral tinyGSR breakout board - Qwiic / STEMMA QT](assets/tinygsr.JPG)
+tinyGSR contains onboard analog op-amps to measure this change in resistance and helps you to easily interface this with your microcontroller system using just a digital interface. tinyGSR can be a powerful tool for anyone looking to better understand their body and emotions. The tinyGSR has Qwiic compatible connector, in addition to standard breakout headers to just plug it into any compatible board with no soldering required. 
 
-ProtoCentral tinyGSR breakout board can be used to measure the electrical conductivity of the skin. GSR is a galvanic skin response (GSR) that assesses a person’s emotional state or arousal level by monitoring variations in sweat gland activity. When a person is emotionally aroused or stressed, their sweat gland activity increases, which can be measured as changes in the electrical conductivity of the skin. With onboard LM324P Operational Amplifiers & TLA2022 has 12-bit resolution ADC and can operate at a sample rate of 3.3 kSPS (thousands of samples per second) through an I2C interface.
-
-## Wiring the board to your Arduino
-
-If you have bought the breakout the connection with the Arduino board is as follows:
-
-|tinyGSR pin label| Arduino Connection   |Pin Function      |
-|----------------- |:--------------------:|-----------------:|
-| VCC             | +5V                   |  Supply voltage       |
-| SDA              | A4               |  Serial data   |
-| SCL              | A5            | Serial clock          |
-| GND              | Gnd  
-
-### Interfacing with Qwiic
-The tinyGSR has an On-board Qwiic compatible connectors to bring flexibility in interfacing. It makes prototyping easy, less complex and interfacing with I2C has been put up simple. The board has built-in support for popular qwiic sensors. This would make it more suitable to plug in, detect the sensor, upload the code and read data.
-
-![Qwiic Interface](assets/qwiic.JPG)
-
-## Programming
-* [Download and Install the IDE](https://www.arduino.cc/en/software)
-* [ProtoCentral tinyGSR github repository](https://github.com/Protocentral/protocentral_tinygsr)
-
-### Install the supporting Library
-It can be found in the ‘Sketch’ menu under ‘Include Library’, ‘Manage Libraries’, and then enter the keyword ‘ProtoCentral TLA202x’ & ‘FIR Filter’ to see the library. When you click on the library, the ‘Install’ button will appear. When you click that button, the library should be installed automatically. When the installation is complete, close the Library Manager.
-
-* Protocentral TLA20xx
-* FIR Filter
-
-### Running the Arduino Sketch
-If you have correctly installed the libraries, the example sketches should now be available from within Arduino.
-Open up your Arduino IDE and run the Arudino sketch (.ino) file. Your Arduino should now be programmed to read output over the USB-UART.
-
-## Extending tinyGSR
-ProtoCentral tinyGSR can be used to detect skin conductance response (SCR), also known as galvanic skin response (GSR). It is a technique that measures changes in the electrical conductance of the skin, which is thought to be related to sweat gland activity and, therefore, to emotional arousal.
-
-### Connecting the Electrodes
-A 2-electrode cable along with a standard stereo jack is provided along with the kit to connect the electrodes to the board. The other side of the electrode connector would connect to Snap-on electrodes attached to the palm.
-
-![Electrodes Connection](assets/electrodes.jpg)
-
-Important Warning: When connecting the electrodes to the body, it is safer to disconnect the mains power source to the Arduino. For example, if you are using the Arduino along with a laptop, disconnecting the battery charger from the laptop would be a safe option.
+![ProtoCentral tinyGSR GSR/EDA digital output  sensor board - Qwiic / STEMMA QT](assets/tinygsr.JPG)
 
 
-# Visualizing data using the ProtoCentral OpenView GUI
+Don't have one? Buy now at https://protocentral.com/product/protocentral-tinygsr-breakout-board-qwiic-stemma-qt/
 
-The GUI for visualizing the skin response is written in Processing, based on Java and is cross-compliable across platforms.
+## Repo Contents
 
-You can download and install ProtoCentral OpenView from [this GitHub Repo](https://github.com/Protocentral/protocentral_openview). You can also program your Arduino with the example sketch specific to OpenView.
+* /firmware - Example code for Arduino
+* /hardware - PCB Design files
 
-Once you have opened the OpenView GUI, make sure to select “tinyGSR” under the “Board” dropdown. If everything goes well, you will be able to see the output.
+## Documentation 
+
+Please refer to our [QuickStart Guide](https://protocentral.com/docs/getting-started/protocentral-tinygsr-gsr-eda-digital-output-sensor-board-qwiic-stemma-qt) for instructions on how to use this board. 
+
 
 License Information
 ===================
