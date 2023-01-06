@@ -4,7 +4,7 @@ ProtoCentral tinyGSR is a [Galvanic Skin Response (GSR) / Electrodermal Activity
 
 tinyGSR contains onboard analog op-amps to measure this change in resistance and helps you to easily interface this with your microcontroller system using just a digital interface. tinyGSR can be a powerful tool for anyone looking to better understand their body and emotions. The tinyGSR has Qwiic compatible connector, in addition to standard breakout headers to just plug it into any compatible board with no soldering required. 
 
-![ProtoCentral tinyGSR GSR/EDA digital output  sensor board - Qwiic / STEMMA QT](assets/tinygsr.JPG)
+![ProtoCentral tinyGSR GSR/EDA digital output  sensor board - Qwiic / STEMMA QT](assets/tinygsr.jpg)
 
 
 Don't have one? Buy now at https://protocentral.com/product/protocentral-tinygsr-breakout-board-qwiic-stemma-qt/
