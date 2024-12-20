@@ -1,23 +1,51 @@
 # ProtoCentral tinyGSR 
 
-ProtoCentral tinyGSR is a [Galvanic Skin Response (GSR) / Electrodermal Activity (EDA)](https://en.wikipedia.org/wiki/Electrodermal_activity) measurement breakout board that allows you to measure and track your physiological responses in real time. GSR measures the changes in electrical conductivity / Electrodermal acivity of the skin, providing valuable insights into a person's emotional state and stress levels. When a person is emotionally aroused or stressed, their sweat gland activity increases, which can be measured as changes in the electrical conductivity of the skin. 
-
-tinyGSR contains onboard analog op-amps to measure this change in resistance and helps you to easily interface this with your microcontroller system using just a digital interface. tinyGSR can be a powerful tool for anyone looking to better understand their body and emotions. The tinyGSR has Qwiic compatible connector, in addition to standard breakout headers to just plug it into any compatible board with no soldering required. 
+## Don't have one? [Buy it here](https://protocentral.com/product/protocentral-tinygsr-breakout-board-qwiic-stemma-qt/)
 
 ![ProtoCentral tinyGSR GSR/EDA digital output  sensor board - Qwiic / STEMMA QT](assets/tinygsr.jpg)
 
 
-Don't have one? Buy now at https://protocentral.com/product/protocentral-tinygsr-breakout-board-qwiic-stemma-qt/
+Protocentral tinyGSR is a [Galvanic Skin Response (GSR) / Electrodermal Activity (EDA)](https://en.wikipedia.org/wiki/Electrodermal_activity) measurement breakout board that allows you to measure and track your physiological responses in real time. GSR measures the changes in electrical conductivity / Electrodermal acivity of the skin, providing valuable insights into a person's emotional state and stress levels. When a person is emotionally aroused or stressed, their sweat gland activity increases, which can be measured as changes in the electrical conductivity of the skin. 
 
-## Repo Contents
+tinyGSR contains onboard analog op-amps to measure this change in resistance and helps you to easily interface this with your microcontroller system using just a digital interface. tinyGSR can be a powerful tool for anyone looking to better understand their body and emotions. The tinyGSR has Qwiic compatible connector, in addition to standard breakout headers to just plug it into any compatible board with no soldering required. 
 
-* /firmware - Example code for Arduino
-* /hardware - PCB Design files
 
-## Documentation 
+## Hardware Setup
 
-Please refer to our [QuickStart Guide](https://protocentral.com/docs/getting-started/protocentral-tinygsr-gsr-eda-digital-output-sensor-board-qwiic-stemma-qt) for instructions on how to use this board. 
+Connection with the Arduino board is as follows:
+ 
+ |tinyGSR pin label | Arduino Connection  |Pin Function      |
+ |:-----------------: |:-----------------:|:----------------:|
+ | SDA              | A4                  |  Serial Data     |
+ | SCL              | A5                  |  Serial Clock    |
+ | Vin              | +5V                 |  Power Supply    |
+ | GND              | GND                 |  GND             |
 
+
+Alternately you can connect using qwiic adaptor:
+
+<center>
+
+  ![qwiic adaptor](./assets/qwiic.jpg)
+  
+</center>
+
+# Visualizing Output
+
+<center>
+
+![streaming in openview](./assets/Blink-tinyGSR-Final.mp4)
+
+</center>
+
+
+For further details of the board, refer the documentation
+
+<center>
+
+[tinyGSR Documentation](https://docs.protocentral.com/getting-started-with-tinyGSR/)
+
+</center>
 
 License Information
 ===================
