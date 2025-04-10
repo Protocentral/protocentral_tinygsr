@@ -36,7 +36,8 @@ Alternately you can connect using qwiic adaptor:
 
 # Visualizing Output
 
-<video src="./assets/Blink-tinyGSR-Final.mp4" controls></video>
+<video src="./assets/Blink-tinyGSR-Final.mp4" width="320" height="240" controls></video>
+
 
 
 ## For further details, refer [the documentation on TinyGSR](https://docs.protocentral.com/getting-started-with-tinyGSR/)
