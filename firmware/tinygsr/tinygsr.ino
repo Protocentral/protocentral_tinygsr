@@ -7,7 +7,7 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////
 //
-//  Arduino Library for the TI TLA20XX ADC (https://www.ti.com/product/TLA20XX)
+//  Arduino Library for the TinyGSR
 //
 //  Copyright (c) 2022 ProtoCentral
 //

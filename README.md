@@ -1,8 +1,11 @@
 # ProtoCentral tinyGSR 
+================================
+[![Compile Examples](https://github.com/Protocentral/protocentral_tinygsr/workflows/Compile%20Examples/badge.svg)](https://github.com/Protocentral/protocentral_tinygsr/actions?workflow=Compile+Examples) 
+
 
 ## Don't have one? [Buy it here](https://protocentral.com/product/protocentral-tinygsr-breakout-board-qwiic-stemma-qt/)
 
-![ProtoCentral tinyGSR GSR/EDA digital output  sensor board - Qwiic / STEMMA QT](assets/tinygsr.jpg)
+![ProtoCentral tinyGSR GSR/EDA digital output  sensor board - Qwiic / STEMMA QT](./assets/tinygsr.jpg)
 
 
 Protocentral tinyGSR is a [Galvanic Skin Response (GSR) / Electrodermal Activity (EDA)](https://en.wikipedia.org/wiki/Electrodermal_activity) measurement breakout board that allows you to measure and track your physiological responses in real time. GSR measures the changes in electrical conductivity / Electrodermal acivity of the skin, providing valuable insights into a person's emotional state and stress levels. When a person is emotionally aroused or stressed, their sweat gland activity increases, which can be measured as changes in the electrical conductivity of the skin. 
@@ -41,11 +44,8 @@ Alternately you can connect using qwiic adaptor:
 
 For further details of the board, refer the documentation
 
-<center>
+## For further details, refer [the documentation on TinyGSR](https://docs.protocentral.com/getting-started-with-tinyGSR/)
 
-[tinyGSR Documentation](https://docs.protocentral.com/getting-started-with-tinyGSR/)
-
-</center>
 
 License Information
 ===================
