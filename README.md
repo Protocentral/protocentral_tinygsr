@@ -1,5 +1,6 @@
 # ProtoCentral tinyGSR 
-================================
+
+
 [![Compile Examples](https://github.com/Protocentral/protocentral_tinygsr/workflows/Compile%20Examples/badge.svg)](https://github.com/Protocentral/protocentral_tinygsr/actions?workflow=Compile+Examples) 
 
 
@@ -36,10 +37,8 @@ Alternately you can connect using qwiic adaptor:
 # Visualizing Output
 
 <center>
-
-![streaming in openview](./assets/Blink-tinyGSR-Final.mp4)
-
-</center>
+<video src="./assets/Blink-tinyGSR-Final.mp4" controls title="streaming in openview" width="45%"></video>
+</center> 
 
 
 For further details of the board, refer the documentation
